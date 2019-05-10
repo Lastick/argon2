@@ -22,7 +22,7 @@ add_library(argon2-internal INTERFACE)
 target_include_directories(argon2-internal INTERFACE lib lib/blake2)
 target_link_libraries(argon2-internal INTERFACE argon2-interface)
 
-add_library(argon2 SHARED
+add_library(argon2 STATIC
     lib/argon2.c
     lib/core.c
     lib/encoding.c
